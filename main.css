@@ -15,6 +15,15 @@ body {
   margin-bottom: 30px;
 }
 
+.header.open {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+}
+
 .main_imagen {
   height: 300px;
   width: 100%;
@@ -23,9 +32,6 @@ body {
   background-position: center center;
   background-size: cover;
   margin-bottom: 20px;
-}
-
-.main_info {
 }
 
 .main_info h1 {
@@ -41,14 +47,13 @@ body {
   font-weight: 300;
   margin-top: 20px;
 }
-
 @media only screen and (min-width: 768px) {
   .main-container {
     margin: 30px 20px 10px 0px;
     flex-direction: row-reverse;
   }
 
-  .header {
+  header {
     position: absolute;
     left: 0px;
     width: 70px;
@@ -56,6 +61,14 @@ body {
     top: 0px;
     bottom: 0px;
     height: auto;
+  }
+  .header__menu ul {
+    display: none;
+    list-style: none;
+  }
+  .header__menu:hover ul,
+  ul :hover {
+    display: block;
   }
 
   .main_info {
